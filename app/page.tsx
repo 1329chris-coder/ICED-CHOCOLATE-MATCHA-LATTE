@@ -4,10 +4,12 @@ import TextOverlays from '@/components/TextOverlays';
 import ParallaxLeaf from '@/components/ParallaxLeaf';          // ← NEW
 import PostSequenceContent from '@/components/PostSequenceContent';
 import FinalCTA from '@/components/FinalCTA';
+import Watermark from '@/components/Watermark';
 
 export default function Home() {
   return (
     <main className="relative bg-black min-h-screen">
+      <Watermark />
       {/* Fixed Navigation */}
       <Navbar />
 
