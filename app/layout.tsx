@@ -70,13 +70,12 @@ export default function RootLayout({
     <html lang="en" className={`${playfairDisplay.variable} ${inter.variable} ${montserrat.variable}`}>
       <body className="antialiased">
         <LoginWall>
-          <Watermark/>
-        <CustomCursor />        {/* ← ADDED */}
-        <FloatingContact />     {/* ← ADDED */}
-        <AIAssistant />
-          <Watermark/>         {/* ← ADDED */}
-        {children}
-         </LoginWall>
+          <Watermark />
+          <CustomCursor />
+          <FloatingContact />
+          <AIAssistant />
+          {children}
+        </LoginWall>
       </body>
     </html>
   );
