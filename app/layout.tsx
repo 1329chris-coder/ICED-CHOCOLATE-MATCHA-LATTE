@@ -1,5 +1,4 @@
 import LoginWall from '@/components/LoginWall';
-import LoginWall from '@/components/LoginWall';
 import type { Metadata } from 'next';
 import { Playfair_Display, Inter, Montserrat } from 'next/font/google';
 import CustomCursor from '@/components/CustomCursor';       // ← ADDED
@@ -70,10 +69,10 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${playfairDisplay.variable} ${inter.variable} ${montserrat.variable}`}>
       <body className="antialiased">
-        <LoginWall>
-          <Watermark/>
-          <CustomCursor />        {/* ← ADDED */}
-          <FloatingContact />     {/* ← ADDED */}
+        <LoginWall>     
+          <Watermark />
+          <CustomCursor />
+          <FloatingContact />
           <AIAssistant />
           {children}
         </LoginWall>
